@@ -1,0 +1,40 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+  }
+
+.tabs {
+  display: grid;
+}
+
+[role="tablist"] {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
+
+[role="tabpanel"] {
+  background: greenyellow;
+  padding: 2rem;
+  min-height: 25vh;
+}
+
+button {
+  background: #ccc;
+  border: 0;
+  color: black;
+  border-radius: 5px 5px 0 0;
+  cursor:pointer;
+}
+
+button[aria-selected="true"] {
+  background: orangered;
+  box-shadow: none;
+  color: rgba(0,0,0,0.7);
+}
+
+button:focus {
+  box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25);
+  border-color: #80bdff;
+  outline: 0;
+}

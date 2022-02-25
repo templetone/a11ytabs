@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabs</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="tabs">
+      <div role="tablist" aria-label="Tabliste">
+        <button role="tab" aria-selected="true" id="tab1">
+          George Harrison
+        </button>
+        <button role="tab" aria-selected="false" id="tab2">
+          Paul McCartney
+        </button>
+        <button role="tab" aria-selected="false" id="tab3">
+          John Lennon
+        </button>
+      </div>
+      <div role="tabpanel" aria-labelledby="tab1">
+        <h2>All things must pass</h2>
+      </div>
+      <div role="tabpanel" aria-labelledby="tab2" hidden>
+        <h2>Chaos and creation in the Backyard</h2>
+      </div>
+      <div role="tabpanel" aria-labelledby="tab3" hidden>
+        <h2>Peace</h2>
+      </div>
+    </div>
+  </div>
+  <script src="./tabs.js"></script>
+</body>
+
+</html>
